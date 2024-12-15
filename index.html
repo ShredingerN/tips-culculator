@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор чаевых</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: #e6e7e8; /* AliceBlue color */
+            }
+        </style>
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center mb-3">КАЛЬКУЛЯТОР ЧАЕВЫХ</h1>
+        <div class="mx-auto my-5" style="max-width: 600px;">
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Сумма счета:</label>
+                <input type="number" class="form-control w-100" id="billAmount">
+            </div>
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Процент чаевых:</label>
+                <input type="number" class="form-control w-100" id="tipPercentage">
+            </div>
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Количество человек:</label>
+                <input type="number" class="form-control w-100" id="numberOfPeople">
+            </div>
+            <button class="btn btn-dark mx-auto d-block" id="count">Рассчитать</button>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center mb-3">РЕЗУЛЬТАТ</h2>
+        <div class="mx-auto my-5" style="max-width: 600px;">
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Чаевые:</label>
+                <input class="form-control w-100" id="tipAmount" readonly>
+            </div>
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Общая сумма:</label>
+                <input class="form-control w-100" id="totalAmount" readonly>
+            </div>
+            <div class="mb-3 mx-auto" style="max-width: 400px;">
+                <label class="form-label">Сумма на человека:</label>
+                <input class="form-control w-100" id="amountPerPerson" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="./ex-01.js"></script>
+</body>
+</html>
