@@ -30,7 +30,7 @@ calculateButton.addEventListener("click", function () {
         return;
     };
 
-    // расчет общей суммы и на суммы на человека
+    // расчет общей суммы и суммы на человека
     const tipAmount = culcTips(billAmount, tipPercentage);
     const billWithTips = culcBillWithTips(billAmount, tipAmount);
     const perPersonAmount = culcPerPersonAmount(billWithTips, numberOfPeople)
